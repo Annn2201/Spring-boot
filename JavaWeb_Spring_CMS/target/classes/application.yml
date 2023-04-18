@@ -1,0 +1,22 @@
+server:
+  post: 8080
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: DemoApplication
+  datasource:
+    url: jdbc:mysql://localhost:3306/cms
+    username: root
+    password: Anhyeuem123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+  thymeleaf:
+    cache: false
+    enabled: true
